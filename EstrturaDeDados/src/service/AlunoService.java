@@ -21,6 +21,9 @@ public class AlunoService {
         System.out.print("RA: ");
         int ra = sc.nextInt();
 
+        System.out.print("Idade: ");
+        int idade = sc.nextInt();
+
         sc.nextLine();
         System.out.print("Sexo: ");
         String sexo = sc.nextLine();
@@ -28,7 +31,7 @@ public class AlunoService {
         System.out.print("Média: ");
         Double media = sc.nextDouble();
 
-        Aluno aluno = new Aluno(nome, ra, sexo, media);
+       Aluno aluno = new Aluno(nome, ra, idade, sexo, media);
         lista.add(aluno);
 
         System.out.println("Aluno cadastrado com sucesso!");
@@ -77,6 +80,8 @@ public class AlunoService {
         System.out.println("\n--- RELATÓRIO POR RA (DECRESCENTE) ---");
         listarAlunos();
     }
+
+
 
 
     public void relatorioAprovados() {
